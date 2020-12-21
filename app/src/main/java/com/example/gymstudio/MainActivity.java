@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.gymstudio.gym.AllGyms;
+
 public class MainActivity extends AppCompatActivity {
     Button btnAllGym, btnYourPlans,btnAboutUs;
 

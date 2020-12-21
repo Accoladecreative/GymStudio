@@ -1,10 +1,12 @@
-package com.example.gymstudio;
+package com.example.gymstudio.gym;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.gymstudio.R;
 
 import java.util.ArrayList;
 

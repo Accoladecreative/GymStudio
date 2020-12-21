@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_add_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Add Plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gym_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:text="Gym Name"
+        app:layout_constraintEnd_toEndOf="@+id/txt_add_plan"
+        app:layout_constraintStart_toStartOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toBottomOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toTopOf="@+id/txt_add_plan" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:text="Days of the weeks"
+        app:layout_constraintEnd_toEndOf="@+id/txt_add_plan"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toBottomOf="@+id/gym_name" />
+
+    <Spinner
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/Days"
+        app:layout_constraintEnd_toEndOf="@+id/txt_add_plan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:text="Minutes"
+        app:layout_constraintEnd_toEndOf="@+id/txt_add_plan"
+        app:layout_constraintStart_toStartOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toBottomOf="@+id/day" />
+
+    <EditText
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:hint="Minutes"
+        app:layout_constraintEnd_toEndOf="@+id/txt_add_plan"
+        app:layout_constraintStart_toStartOf="@+id/txt_add_plan"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/add_plan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Plan"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minutes" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Cancel"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/add_plan_button"
+        app:layout_constraintTop_toBottomOf="@+id/minutes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

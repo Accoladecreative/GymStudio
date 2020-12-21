@@ -1,11 +1,10 @@
-package com.example.gymstudio;
+package com.example.gymstudio.gym;
 
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
+import com.example.gymstudio.R;
+
 import java.util.ArrayList;
 
 public class GymAdapter extends RecyclerView.Adapter<GymAdapter.GymViewHolder> {
@@ -22,9 +23,9 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.GymViewHolder> {
     public GymAdapter(Context context) {
         this.context = context;
     }
-    public static final String DETAILS = "com.example.gymstudio.Gym.details";
-    public static final String IMAGE = "com.example.gymstudio.Gym.image";
-    public static final String PLAN = "com.example.gymstudio.Gym.plan";
+    public static final String DETAILS = "com.example.gymstudio.gym.Gym.details";
+    public static final String IMAGE = "com.example.gymstudio.gym.Gym.image";
+    public static final String PLAN = "com.example.gymstudio.gym.Gym.plan";
     @NonNull
     @Override
     public GymViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

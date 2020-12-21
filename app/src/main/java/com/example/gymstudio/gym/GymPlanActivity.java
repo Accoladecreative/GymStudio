@@ -1,8 +1,10 @@
-package com.example.gymstudio;
+package com.example.gymstudio.gym;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.gymstudio.R;
 
 public class GymPlanActivity extends AppCompatActivity {
 

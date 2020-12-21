@@ -1,4 +1,4 @@
-package com.example.gymstudio;
+package com.example.gymstudio.gym;
 
 public class Gym {
     String details,plan;

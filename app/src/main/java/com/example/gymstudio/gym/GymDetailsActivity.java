@@ -1,24 +1,27 @@
-package com.example.gymstudio;
+package com.example.gymstudio.gym;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.widget.CheckBox;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import com.example.gymstudio.R;
+import com.example.gymstudio.plan.AddPlanDialog;
 
-import static com.example.gymstudio.GymAdapter.DETAILS;
-import static com.example.gymstudio.GymAdapter.IMAGE;
-import static com.example.gymstudio.GymAdapter.PLAN;
+import static com.example.gymstudio.gym.GymAdapter.DETAILS;
+import static com.example.gymstudio.gym.GymAdapter.IMAGE;
+import static com.example.gymstudio.gym.GymAdapter.PLAN;
 
 public class GymDetailsActivity extends AppCompatActivity {
     TextView gymDetails,gymPlan;
     ImageView gymImage;
+    Button btnAddPlan;
+
 
 
     @Override
@@ -44,11 +47,17 @@ public class GymDetailsActivity extends AppCompatActivity {
 
         }
 
-        if(gymPlan.isSelected()){
+        btnAddPlan = findViewById(R.id.add_to_plan);
+        btnAddPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               AddPlanDialog dialog = new AddPlanDialog();
+               Bundle bundle = new Bundle();
+//               bundle.putParcelable("extra", );
+                dialog.show(getSupportFragmentManager(),"this is a tag");
 
-
-        }
-
+            }
+        });
 
     }
 }

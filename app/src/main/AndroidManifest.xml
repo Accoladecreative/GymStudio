@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GymStudio">
-        <activity android:name=".GymPlanActivity"></activity>
+        <activity android:name=".plan.AllPlansActivity"></activity>
+        <activity android:name=".gym.GymPlanActivity" />
         <activity
-            android:name=".GymDetailsActivity"
-            android:parentActivityName=".AllGyms" />
+            android:name=".gym.GymDetailsActivity"
+            android:parentActivityName=".gym.AllGyms" />
         <activity
-            android:name=".AllGyms"
+            android:name=".gym.AllGyms"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
